@@ -1,0 +1,1 @@
+playsound minecraft:ui.toast.challenge_complete master @p

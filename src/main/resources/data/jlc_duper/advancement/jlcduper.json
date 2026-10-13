@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "crafted_duper": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "jlc_duper:jlcduper"
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "jlc_duper:jlcduper"
+    },
+    "title": {
+      "text": "Double or Nothing",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Craft the JLC Duper. What could possibly go wrong?"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "crafted_duper"
+    ]
+  ],
+  "rewards": {
+    "function": "jlc_duper:jlcduper_sound"
+  }
+}

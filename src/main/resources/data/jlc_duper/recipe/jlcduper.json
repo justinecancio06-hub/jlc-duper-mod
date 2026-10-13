@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "building",
+	"pattern": [
+		"DDD",
+		" S ",
+		"NNN"
+	],
+	"key": {
+		"D": "minecraft:diamond_block",
+		"S": "minecraft:nether_star",
+		"N": "minecraft:netherite_ingot"
+	},
+	"result": {
+		"id": "jlc_duper:jlcduper",
+		"count": 1
+	}
+}
