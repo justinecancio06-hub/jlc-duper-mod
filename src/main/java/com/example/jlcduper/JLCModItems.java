@@ -22,6 +22,6 @@ public class JLCModItems {
 	private static Item registerItem(String name) {
 		ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, JLCDUPER.id(name));
 		return Registry.register(BuiltInRegistries.ITEM, key,
-				new Item(new Item.Properties().useItemDescriptionPrefix().durability(5).setId(key)));
+				new Item(new Item.Properties().useItemDescriptionPrefix().durability(5).fireResistant().setId(key)));
 	}
 }

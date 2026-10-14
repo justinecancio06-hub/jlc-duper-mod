@@ -1,7 +1,6 @@
 {
-	"variants": {
-		"": {
-			"model": "jlc_duper:block/jlcduper"
-		}
-	}
+  "variants": {
+    "lit=false": { "model": "jlc_duper:block/jlcduper" },
+    "lit=true":  { "model": "jlc_duper:block/jlcduper_on" }
+  }
 }

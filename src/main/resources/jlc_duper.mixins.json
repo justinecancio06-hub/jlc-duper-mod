@@ -3,6 +3,7 @@
 	"package": "com.example.jlcduper.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
+		"EnderDragonMixin",
 		"EnderManMixin"
 	],
 	"injectors": {

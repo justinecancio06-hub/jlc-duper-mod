@@ -30,6 +30,7 @@ public class JLCModBlocks {
 			.sound(JLC_DUPER_SOUND)
 			.destroyTime(5.0f)
 			.explosionResistance(6.0f)
+			.lightLevel(state -> state.getValue(JLCDuperBlock.LIT) ? 12 : 0)
 			.requiresCorrectToolForDrops());
 
 	public static void register() {

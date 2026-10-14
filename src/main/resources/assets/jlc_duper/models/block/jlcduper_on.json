@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"down": "jlc_duper:block/jlcduper_top",
+		"up": "jlc_duper:block/jlcduper_top",
+		"north": "jlc_duper:block/jlcduper_front_on",
+		"south": "jlc_duper:block/jlcduper_side",
+		"east": "jlc_duper:block/jlcduper_side",
+		"west": "jlc_duper:block/jlcduper_side",
+		"particle": "jlc_duper:block/jlcduper_side"
+	}
+}

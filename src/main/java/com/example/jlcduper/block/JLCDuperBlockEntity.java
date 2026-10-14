@@ -102,14 +102,25 @@ public class JLCDuperBlockEntity extends BlockEntity implements MenuProvider, Im
 					blockEntity.items.set(FUEL_SLOT, ItemStack.EMPTY);
 				}
 			}
+			setLit(level, pos, true);
 			changed = true;
-		} else if (blockEntity.progress > 0) {
-			blockEntity.progress = 0;
-			changed = true;
+		} else {
+			if (blockEntity.progress > 0) {
+				blockEntity.progress = 0;
+				changed = true;
+			}
+			setLit(level, pos, false);
 		}
 
 		if (changed) {
 			blockEntity.setChanged();
+		}
+	}
+
+	private static void setLit(Level level, BlockPos pos, boolean lit) {
+		BlockState state = level.getBlockState(pos);
+		if (state.getValue(JLCDuperBlock.LIT) != lit) {
+			level.setBlockAndUpdate(pos, state.setValue(JLCDuperBlock.LIT, lit));
 		}
 	}
 

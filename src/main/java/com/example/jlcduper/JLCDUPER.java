@@ -17,7 +17,6 @@ public class JLCDUPER implements ModInitializer {
 		JLCModBlocks.register();
 		JLCModBlockEntities.register();
 		JLCModScreenHandlers.register();
-		JLCModEntityEvents.register();
 		JLCModSounds.register();
 	}
 
